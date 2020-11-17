@@ -27,7 +27,7 @@ void toReducedRowEchelonForm(double matrix[], int n, int m) {
 
 			c = matrix[m * i + j] / matrix[m * j + j];
 
-			for (int k = 0; k < m; k++) {
+			for (int k = j; k < m; k++) {
 				matrix[m * i + k] = matrix[m * i + k] - matrix[m * j + k] * c;
 			}
 		}
