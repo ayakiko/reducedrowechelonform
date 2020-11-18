@@ -22,7 +22,7 @@ Ret toPoints(MatrixType& M)
 {
 	typedef MatrixTraits::index_type iType;
 
-	MatrixTraits::value_type P[MatrixTraits::j][MatrixTraits::j + 1] = { 0 };
+	MatrixTraits::value_type P[MatrixTraits::j][MatrixTraits::j + 1];
 
 	for (iType j = 0; j < MatrixTraits::j; j++)
 	{
